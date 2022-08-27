@@ -1,0 +1,117 @@
+.header {
+  position: relative;
+  background-color: #f6ebda;
+  &-top {
+    padding-top: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      &-img {
+      }
+    }
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 0 32px;
+      margin-left: auto;
+      &-item {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: calc(27 / 18);
+        z-index: 10;
+      }
+
+      &-link {
+        transition: all 0.2s linear;
+
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+    }
+    .input-box {
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin-left: auto;
+      margin-right: 24px;
+      z-index: 10;
+
+      img {
+        position: absolute;
+        left: 0;
+        padding-left: 10px;
+      }
+      input {
+        border-radius: 35px;
+        outline: none;
+        border: none;
+        padding: 11px 40px;
+        max-width: 220px;
+      }
+    }
+    img {
+      cursor: pointer;
+      transition: all 0.2s linear;
+      z-index: 10;
+      &:hover {
+        opacity: 0.75;
+      }
+    }
+  }
+
+  &-main {
+    padding-top: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-content {
+  }
+  &-heading {
+    width: 100%;
+    max-width: 489px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: calc(72 / 48);
+    margin-bottom: 24px;
+    color: $secondaryColor;
+  }
+  &-desc {
+    width: 100%;
+    max-width: 393px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(27 / 18);
+    margin-bottom: 32px;
+    color: $light-gray;
+  }
+  .btn-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 10px;
+  }
+  &-action {
+    display: flex;
+    align-items: center;
+    gap: 0 33px;
+  }
+  &-more {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: calc(18 / 12);
+    color: $primaryColor;
+  }
+  &-image {
+    z-index: 10;
+  }
+  .img-top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+}
